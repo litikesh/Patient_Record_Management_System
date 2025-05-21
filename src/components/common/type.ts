@@ -21,3 +21,20 @@ export interface ExecuteQueryResult {
   data: unknown[];
   error: string | null;
 }
+
+export interface PatientFormData {
+  first_name: string;
+  last_name: string;
+  date_of_birth: string;
+  gender: string;
+  phone: string;
+  email: string;
+  address: string;
+  weight: number;
+  height: number;
+  blood_group: string;
+  blood_pressure: number;
+  medical_notes: string;
+  insurance_provider: string;
+  insurance_id: string;
+}
