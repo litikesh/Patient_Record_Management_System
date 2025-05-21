@@ -8,7 +8,7 @@ A frontend-only patient registration application that uses PGlite for data stora
 ## Features
 
 - **Patient Registration:** Capture comprehensive patient information, including personal details, medical metrics, and insurance information
-- **Patient Records Management:** View, filter, sort, and paginate patient records
+- **Patient Records Management:** Filter and display patient records by name in real-time
 - **Raw SQL Queries:** Execute custom SQL queries to retrieve and analyze patient data
 - **Data Persistence**: Patient data is stored locally and persists across page refreshes
 - **Cross-Tab Synchronization:** Synchronized data reading and writing across multiple browser tabs
