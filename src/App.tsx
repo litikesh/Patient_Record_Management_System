@@ -4,6 +4,7 @@ import Dashboard from "./components/Pages/Dashboard";
 import Patients from "./components/Pages/Patients";
 import Records from "./components/Pages/Records";
 import SQLInterface from "./components/Pages/SQLInterface";
+import NotFound from "./components/Pages/NotFound";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
             </DashboardLayout>
           }
         />
-        <Route path="*" element={<div>404</div>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
