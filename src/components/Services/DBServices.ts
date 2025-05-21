@@ -192,6 +192,24 @@ export const getAllPatients = async (): Promise<PatientData[]> => {
   }
 };
 
+export const searchPatientsByName = async (
+  searchTerm: string
+): Promise<PatientData[]> => {
+  const database = await initDatabase();
+  try {
+    const result = await database.query(
+      `SELECT * FROM patients
+       WHERE first_name ILIKE $1 OR last_name ILIKE $2
+       ORDER BY last_name, first_name`,
+      [`%${searchTerm}%`, `%${searchTerm}%`]
+    );
+    return (result.rows as PatientData[]) || [];
+  } catch (error) {
+    console.error("Error executing searchPatientsByName query:", error);
+    throw error;
+  }
+};
+
 export const executeQuery = async (
   sqlQuery: string,
   params: unknown[] = []

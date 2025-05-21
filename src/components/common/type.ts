@@ -38,3 +38,12 @@ export interface PatientFormData {
   insurance_provider: string;
   insurance_id: string;
 }
+
+export interface MedicalRecord {
+  id?: number;
+  patient_id: number;
+  medical_notes?: string;
+  insurance_provider?: string;
+  insurance_id?: string;
+  created_at: string;
+}

@@ -6,9 +6,9 @@ const Dashboard: React.FC = () => {
   return (
     <div className="mx-auto space-y-4">
       <section className="bg-white rounded-lg">
-        <div className="p-6 md:p-8 border-b border-gray-100">
-          <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-          <p className="mt-2 text-gray-600 text-base">
+        <div className="p-6 md:p-8 border-b rounded-t-lg border-gray-100 bg-gradient-to-r from-gray-600 to-gray-700">
+          <h1 className="text-3xl font-bold text-white">Dashboard</h1>
+          <p className="mt-2 text-gray-300 text-base">
             Welcome to the Patient Registration System. Register new patients
             and manage their records seamlessly.
           </p>
