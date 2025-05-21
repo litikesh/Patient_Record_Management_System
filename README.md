@@ -18,7 +18,7 @@ A frontend-only patient registration application that uses PGlite for data stora
 - React(vite)
 - TypeScript
 - Tailwind CSS
-- Pglite (libSQL client) for local database
+- Pglite
 - React Router for navigation
 - React Hot Toast for notifications
 - Lucide React for icons
@@ -93,7 +93,7 @@ CREATE TABLE medical_records (
 
 ## Usage
 
-### Adding a Patients
+### Adding a Patient
 
 1. Navigate to the "Patients" section
 2. Fill out the three-step form (Personal, Medical, Insurance)
@@ -105,7 +105,7 @@ CREATE TABLE medical_records (
 2. Search for patients by name
 3. Click on a patient to view their details and medical history
 
-### Running SQL Queries
+### Running Raw SQL Queries
 
 1. Navigate to the "SQL Interface" section
 2. Write and execute custom SQL queries
@@ -154,7 +154,7 @@ The application is deployed at [https://patient-record-management-system-peach.v
 
 ## Challenges Faced
 
-* Getting started with **PGlite** took a bit of time, it was a new tool for me, and understanding how to set up a local database in the browser without a backend was a learning curve. But once it clicked, it worked really well.
+* Getting started with **PGlite** took a bit of time. It was a new tool for me, and understanding how to set up a local database in the browser without a backend was a learning curve. But once it clicked, it worked really well.
 
 * Figuring out **cross-tab data sync** using the BroadcastChannel API was a bit tricky at first, especially making sure updates didn’t cause conflicts or stale states but it was satisfying to see everything stay in sync across tabs.
 
